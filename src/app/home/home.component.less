@@ -1,0 +1,59 @@
+.home-navigation {
+  height: 99vh;
+  width: 99vw;
+
+  ul { 
+    margin: 0;
+    padding: 0;
+    display: grid; 
+    grid-template-columns: repeat(2, 50vw); 
+    grid-template-rows: repeat(2, 50vh); 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+
+    li {
+      display: flex; // to stretch it 100%
+      position: relative;
+
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 auto;
+        position: relative;
+        z-index: 2;
+        font-weight: bold;
+        text-transform: uppercase;
+        // text-align: center;
+        color: white;
+        transition: all .2s ease;
+        
+        &:hover {
+          // background: gray;
+        }
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,.6);
+        transition: all .2s ease;
+      }
+      &:hover {
+        &:before {
+          background: rgba(0,0,0,.8);
+        }
+      }
+
+      &.about {
+        background: url('/assets/img/motorcycle-camping.jpg') no-repeat 50% 50% / cover;
+      }
+    }
+    &.list-unstyled {
+      list-style-type: none;
+    }
+  }
+}
