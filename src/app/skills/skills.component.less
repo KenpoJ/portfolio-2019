@@ -1,0 +1,59 @@
+@import '../../less/variables.less';
+
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+}
+.nav-tabs {
+  border-bottom: 1px solid lighten(@dark, 10%);
+
+  .nav-item {
+    padding: 1rem 5rem;
+    flex: 1 1 auto;
+    text-align: center;
+    background: @dark;
+    border: 1px solid lighten(@dark, 10%);
+    border-width: 1px 1px 0 0;
+
+    @media screen and (max-width: 500px) {
+      border-width: 1px 1px 1px 1px;
+    }
+
+    &.active {
+      background: lighten(@dark, 10%);
+      border-radius: 4px 4px 0 0;
+      border: 1px solid @dark;
+      border-width: 0 1px 0 0;
+    }
+  }
+}
+
+.tab-pane {
+  padding: 1rem;
+  // border: 1px solid green;
+}
+
+.skill-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  div {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    flex: 0 1 4%;
+    font-size: 80%;
+  }
+  .badge {
+    margin-bottom: .3rem;
+    margin-right: .3rem;
+  }
+}
