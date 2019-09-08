@@ -8,14 +8,26 @@ $('#core').show();
 
 l.click(function(e) {
   e.preventDefault();
-  var href = $(this).attr('href');
+  var t = $(this);
+  var href = t.attr('href');
 
+  // navigation highlighting
   l.removeClass('active');
   $(this).addClass('active');
   
-  $('.tab-pane').fadeOut('slow', function() {
-    $(href).fadeIn('slow');
-  });
+  // tab-pane content
+  $('.tab-pane').fadeOut('fast');
+  switch(href) {
+    case '#core':
+      $('#core').fadeIn();
+      break;
+    case '#prof':
+      $('#prof').fadeIn();
+      break;
+    case '#other':
+      $('#other').fadeIn();
+      break;
+  }
 })
 
 })
