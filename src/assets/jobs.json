@@ -1,0 +1,30 @@
+{
+  "Jobs": [
+    {
+      "company": "Company Name",
+      "title": "Title",
+      "dates": "Jan 2000 - Jan 2002",
+      "duties": [
+        {"duty": "duty 1"},
+        {"duty": "duty 2"}
+      ],
+      "skills": [
+        "skill",
+        "skill"
+      ]
+    },
+    {
+      "company": "Company Two",
+      "title": "Title",
+      "dates": "Jan 2002 - Jan 2005",
+      "duties": [
+        {"duty": "duty 1"},
+        {"duty": "duty 2"}
+      ],
+      "skills": [
+        "skill",
+        "skill"
+      ]
+    }
+  ]
+}

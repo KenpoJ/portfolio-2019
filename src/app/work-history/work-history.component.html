@@ -1,5 +1,11 @@
 <app-main-nav></app-main-nav>
 
 <div class="container content-container">
-<p>work-history works!</p>
+  <p>work-history works!</p>
+
+  <h2>Work History</h2>
+  <div class="work-item" *ngFor="let job of jobs">
+    <span>{{ job.color }}</span>
+  </div>
+
 </div>
