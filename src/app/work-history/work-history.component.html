@@ -1,11 +1,28 @@
 <app-main-nav></app-main-nav>
 
 <div class="container content-container">
-  <p>work-history works!</p>
 
   <h2>Work History</h2>
   <div class="work-item" *ngFor="let job of jobs">
-    <span>{{ job.color }}</span>
+    <div class="company-info">
+      <h2 class="job-title">{{ job.title }}</h2>
+      <p class="lead">{{ job.company }}</p>
+    </div>
+    <div class="skills-used">
+      <h3>Software Used</h3>
+      <ul class="list-unstyled">
+        <li *ngFor="let software of job.software; index as i;">{{ job.software[i] }}</li>
+      </ul>
+    </div>
+    <div class="technologes-used">
+      <h3>Technologies Used</h3>
+      <ul class="list-unstyled">
+        <li *ngFor="let technology of job.technologies; index as i;">{{ job.technologies[i] }}</li>
+      </ul>
+    </div>
+    <div class="description">
+      <li *ngFor="let duty of job.duties; index as i;">{{ job.duties[i] }}</li>
+    </div>
   </div>
 
 </div>

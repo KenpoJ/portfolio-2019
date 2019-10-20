@@ -1,16 +1,27 @@
 {
   "Jobs": [
     {
-      "company": "Company Name",
-      "title": "Title",
-      "dates": "Jan 2000 - Jan 2002",
+      "company": "Advertising Solutions",
+      "title": "Web Developer",
+      "dates": "Jul 2018 - present",
       "duties": [
-        {"duty": "duty 1"},
-        {"duty": "duty 2"}
+        "Build various client websites, including consuming external APIs",
+        "Worked with clients on content &amp; layout requests",
+        "Creation of AdWords display ads using Photoshop"
       ],
-      "skills": [
-        "skill",
-        "skill"
+      "software": [
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Sublime Text",
+        "cPanel"
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "PHP",
+        "MySQL",
+        "Wordpress"
       ]
     },
     {
@@ -18,12 +29,31 @@
       "title": "Title",
       "dates": "Jan 2002 - Jan 2005",
       "duties": [
-        {"duty": "duty 1"},
-        {"duty": "duty 2"}
+        "duty 1",
+        "duty 2"
       ],
-      "skills": [
+      "software": [
         "skill",
         "skill"
+      ],
+      "technologies": [
+        ""
+      ]
+    },
+    {
+      "company": "Company Two",
+      "title": "Title",
+      "dates": "Jan 2002 - Jan 2005",
+      "duties": [
+        "duty 1",
+        "duty 2"
+      ],
+      "software": [
+        "skill",
+        "skill"
+      ],
+      "technologies": [
+        ""
       ]
     }
   ]
